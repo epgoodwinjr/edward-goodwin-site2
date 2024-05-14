@@ -6,80 +6,76 @@
     <title>Edward P. Goodwin Jr.</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: #ffffff;
-            color: #333333;
+            color: #000000;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: 100vh;
         }
-        header, section, footer {
-            width: 100%;
-            max-width: 800px;
+        .container {
+            text-align: center;
+            max-width: 600px;
             padding: 20px;
             box-sizing: border-box;
         }
-        header {
-            background-color: #f4f4f4;
-            text-align: center;
-            border-bottom: 2px solid #000000;
-        }
-        header h1 {
-            margin: 0;
-            padding: 10px 0;
+        h1 {
             font-size: 2.5em;
-        }
-        section {
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 20px;
-        }
-        section:last-of-type {
-            border-bottom: none;
+            font-weight: bold;
+            margin: 0.5em 0;
         }
         h2 {
-            font-size: 2em;
-            margin-top: 0;
+            font-size: 1.5em;
+            margin: 0.5em 0;
         }
         p {
             font-size: 1.2em;
-            line-height: 1.6;
+            line-height: 1.5;
+            margin: 1em 0;
+        }
+        .section {
+            margin: 2em 0;
+        }
+        .contact a {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 1px solid #000000;
+        }
+        .contact a:hover {
+            color: #000000;
+            border-bottom: 1px solid #666666;
         }
         footer {
-            text-align: center;
-            padding-top: 20px;
-        }
-        a {
-            color: #333333;
-            text-decoration: none;
-            border-bottom: 2px solid #333333;
-        }
-        a:hover {
-            color: #000000;
-            border-bottom: 2px solid #000000;
+            margin-top: 3em;
+            font-size: 0.9em;
+            color: #666666;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Edward P. Goodwin Jr.</h1>
-    </header>
-    <section>
-        <h2>About</h2>
-        <p>I am a Managing Director at FTI Consulting in the Strategic Communications segment, based in Washington, D.C. I focus on advising companies that disrupt established industries or operate in emerging sectors, leveraging strategic and research-driven communication strategies to enhance their market positions. My expertise includes guiding clients through significant transitions such as fundraising and public listings, crafting corporate narratives for leaders in power semiconductors, and helping clients navigate shareholder activism. Previously, I was Senior Vice President at 2U, Inc., leading Investor Relations and contributing to significant capital raises. I hold an MBA from the Kenan-Flagler Business School at the University of North Carolina, Chapel Hill and a BA in International Affairs from the George Washington University.</p>
-    </section>
-    <section>
-        <h2>Posts</h2>
-        <p>Coming soon...</p>
-    </section>
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:edward.goodwin@example.com">edward.goodwin@example.com</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Edward P. Goodwin Jr.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Edward P. Goodwin Jr.</h1>
+        </header>
+        <section class="about section">
+            <h2>About</h2>
+            <p>I am a Managing Director at FTI Consulting in the Strategic Communications segment, based in Washington, D.C. I focus on advising companies that disrupt established industries or operate in emerging sectors, leveraging strategic and research-driven communication strategies to enhance their market positions. My expertise includes guiding clients through significant transitions such as fundraising and public listings, crafting corporate narratives for leaders in power semiconductors, and helping clients navigate shareholder activism. Previously, I was Senior Vice President at 2U, Inc., leading Investor Relations and contributing to significant capital raises. I hold an MBA from the Kenan-Flagler Business School at the University of North Carolina, Chapel Hill and a BA in International Affairs from the George Washington University.</p>
+        </section>
+        <section class="posts section">
+            <h2>Posts</h2>
+            <p>Coming soon...</p>
+        </section>
+        <section class="contact section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:edward.goodwin@example.com">edward.goodwin@example.com</a></p>
+        </section>
+        <footer>
+            <p>&copy; 2024 Edward P. Goodwin Jr.</p>
+        </footer>
+    </div>
 </body>
 </html>
